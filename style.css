@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("./Imagens/papel de parede.jpg");
+}
+
+.pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58%;
+    height: 100vh;
+}
+
+.convite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 1.3rem;
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 1.1rem 0;
+    border: 2px solid white;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.convite img {
+    height: 20rem;
+    width: 35rem;
+}
+
+.recado {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.interacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+    margin: 1,3rem;
+}   
+
+.box   {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 2px solid white;
+    margin: 1rem;
+}
+
+.simbol1 {
+    width: 15%;
+    height: 15%;
+    margin-left: 1.5rem;
+}
+
+.simbol2 {
+    width: 15%;
+    height: 15%;
+    margin-right: 1.5rem;
+}
+
+.box2   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 2px solid white;
+    margin: 0.6rem;
+}
+
+.box:nth-child(1) {
+    min-height: 20rem;
+}
+
+.logo {
+    height: 4rem;
+    width: 90%;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1.3rem;
+}
+
+.foto-perfil img {
+height: 12rem;
+border-color: black;
+margin: 0.3rem;
+margin-bottom: 0.6rem;
+border: 3px solid white;
+}
+
+.login {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 8px;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.logout {
+margin-top: 1rem;
+color: white;
+font-size: 1rem;
+text-decoration: underline;
+}
+
+.info {
+    display: flex;
+    color: white;
+    padding: 2px;
+    justify-content: center;
+}
+
+.inscricao{
+    color: white;
+}
+
+.link1{
+    margin-right: 0.3rem;
+    font-weight: bold;
+    color: lightgray;
+    text-decoration: underline;
+}
+.link2{
+    margin-left: 0.3rem;
+    font-weight: bold;
+    color: lightgray;
+    text-decoration: underline;
+}
+
+
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.d1 {
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0,3rem;
+    border: 1px solid white;
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app {
+    height: 3rem;
+    width: 10.2rem;
+    background-size: cover;
+
+}
+
+.app:nth-child(1){
+    background-image: url("./Imagens/a.png");
+}
+
+.app:nth-child(2) {
+    background-image: url("./Imagens/googleplay.png");
+}
+
+@media (max-width: 1024px){
+    .pagina{
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .pagina {
+        width: 90%;
+    }
+
+    .convite {
+        display: none;
+    }
+
+    .interacoes {
+        width: 100%;
+    }
+
+}
