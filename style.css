@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 100%;
 }
 
 body {
@@ -13,7 +13,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url("./Imagens/papel de parede.jpg");
+    background-size: 105% 105%;
 }
 
 .pagina {
@@ -21,14 +23,13 @@ body {
     align-items: center;
     justify-content: center;
     width: 58%;
-    height: 100vh;
+    height: 80%;
 }
 
 .convite {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     margin: 1.3rem;
     background-color: rgb(18, 18, 18);
     width: 100%;
@@ -39,12 +40,13 @@ body {
 }
 
 .convite img {
-    height: 20rem;
-    width: 35rem;
+    height: 80%;
+    width: 100%;
+    padding: 1rem;
 }
 
 .recado {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     padding: 1rem;
 }
@@ -52,10 +54,11 @@ body {
 .interacoes{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     width: 80%;
     margin: 1,3rem;
+    padding: 1.1rem 0;
 }   
 
 .box   {
@@ -70,26 +73,20 @@ body {
     margin: 1rem;
 }
 
-.simbol1 {
+.simbol{
     width: 15%;
     height: 15%;
-    margin-left: 1.5rem;
-}
-
-.simbol2 {
-    width: 15%;
-    height: 15%;
-    margin-right: 1.5rem;
+    margin: 1.5rem;
 }
 
 .box2   {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     background-color: rgb(18, 18, 18);
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 0,8rem 0;
     border: 2px solid white;
     margin: 0.6rem;
 }
@@ -194,6 +191,7 @@ text-decoration: underline;
     height: 3rem;
     width: 10.2rem;
     background-size: cover;
+    margin:2px;
 
 }
 
@@ -209,6 +207,11 @@ text-decoration: underline;
     .pagina{
         width: 90%;
     }
+
+    .simbol1 {
+        display: none;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -218,6 +221,10 @@ text-decoration: underline;
     }
 
     .convite {
+        display: none;
+    }
+
+    .simbol1 {
         display: none;
     }
 
